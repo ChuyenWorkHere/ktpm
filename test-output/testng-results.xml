@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="10" passed="2" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-04T11:24:38 ICT" name="Default Suite" finished-at="2025-06-04T11:25:52 ICT" duration-ms="74618">
+    <groups>
+    </groups>
+    <test started-at="2025-06-04T11:24:38 ICT" name="Testting" finished-at="2025-06-04T11:25:52 ICT" duration-ms="74618">
+      <class name="software.testing.group6.SignUpTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:38 ICT" name="setUp" finished-at="2025-06-04T11:24:39 ICT" duration-ms="1568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidInputs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:39 ICT" name="testInvalidInputs" description="TC9-TC14: Kiểm thử đăng ký với dữ liệu không hợp lệ" data-provider="invalidInputData" finished-at="2025-06-04T11:24:46 ICT" duration-ms="7000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user105ntnnt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nguyen Van A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01/01/1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[chickaakaka.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[123 Đường ABC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Email không hợp lệ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidInputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:46 ICT" name="tearDown" finished-at="2025-06-04T11:24:46 ICT" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:46 ICT" name="setUp" finished-at="2025-06-04T11:24:48 ICT" duration-ms="1162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidInputs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:48 ICT" name="testInvalidInputs" description="TC9-TC14: Kiểm thử đăng ký với dữ liệu không hợp lệ" data-provider="invalidInputData" finished-at="2025-06-04T11:24:55 ICT" duration-ms="7052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nguyen Van A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01/01/1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[user8@example.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[123 Đường ABC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Tên tài khoản phải ít nhất 6 ký tự]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidInputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:55 ICT" name="tearDown" finished-at="2025-06-04T11:24:55 ICT" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:55 ICT" name="setUp" finished-at="2025-06-04T11:24:56 ICT" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidInputs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:24:56 ICT" name="testInvalidInputs" description="TC9-TC14: Kiểm thử đăng ký với dữ liệu không hợp lệ" data-provider="invalidInputData" finished-at="2025-06-04T11:25:02 ICT" duration-ms="6092" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user106nt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vcc@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01/01/1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[user9@example.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[123 Đường ABC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Họ và tên không hợp lệ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1def4d989d7fbeddbb6a3b09d13edde, isElementDisplayed {id=f.255EB15F2B6D2A9DA2865720ECB89CA4.d.FF5C2FE359F26A8B6D1492D82D45FE04.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir20208_108...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63031/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e1def4d989d7fbeddbb6a3b09d13edde)] -> id: LinkDX]
+Session ID: e1def4d989d7fbeddbb6a3b09d13edde]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1def4d989d7fbeddbb6a3b09d13edde, isElementDisplayed {id=f.255EB15F2B6D2A9DA2865720ECB89CA4.d.FF5C2FE359F26A8B6D1492D82D45FE04.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir20208_108...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63031/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e1def4d989d7fbeddbb6a3b09d13edde)] -> id: LinkDX]
+Session ID: e1def4d989d7fbeddbb6a3b09d13edde
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at software.testing.group6.SignUpTest.testInvalidInputs(SignUpTest.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidInputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:02 ICT" name="tearDown" finished-at="2025-06-04T11:25:02 ICT" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:02 ICT" name="setUp" finished-at="2025-06-04T11:25:04 ICT" duration-ms="1971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidInputs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:04 ICT" name="testInvalidInputs" description="TC9-TC14: Kiểm thử đăng ký với dữ liệu không hợp lệ" data-provider="invalidInputData" finished-at="2025-06-04T11:25:12 ICT" duration-ms="7931" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user107nt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nguyen Van A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01/01/2026]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[user10@example.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[123 Đường ABC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ngày sinh không hợp lệ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0f7a7de509aa638e214ebe53ae938fe5, isElementDisplayed {id=f.D5540C83A86145E84B2F1BFB6E12B06B.d.2F2F7D0DC073A1A4FF295A08A6B8B7D1.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir10716_209...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63062}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63062/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0f7a7de509aa638e214ebe53ae938fe5)] -> id: LinkDX]
+Session ID: 0f7a7de509aa638e214ebe53ae938fe5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0f7a7de509aa638e214ebe53ae938fe5, isElementDisplayed {id=f.D5540C83A86145E84B2F1BFB6E12B06B.d.2F2F7D0DC073A1A4FF295A08A6B8B7D1.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir10716_209...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63062}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63062/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0f7a7de509aa638e214ebe53ae938fe5)] -> id: LinkDX]
+Session ID: 0f7a7de509aa638e214ebe53ae938fe5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at software.testing.group6.SignUpTest.testInvalidInputs(SignUpTest.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidInputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:12 ICT" name="tearDown" finished-at="2025-06-04T11:25:13 ICT" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:13 ICT" name="setUp" finished-at="2025-06-04T11:25:14 ICT" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidInputs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:14 ICT" name="testInvalidInputs" description="TC9-TC14: Kiểm thử đăng ký với dữ liệu không hợp lệ" data-provider="invalidInputData" finished-at="2025-06-04T11:25:21 ICT" duration-ms="6871" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user108nt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nguyen Van A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01/01/1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[user11@example.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[123 Đường ABC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[SĐT không hợp lệ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2e533a8fdbdad4ef3767f3e4337cfe5, isElementDisplayed {id=f.A7D719506287B85D3624192F692E6F35.d.9C462E52A5C325066B69F3DCD6807C25.e.60}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir17044_107...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63090/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f2e533a8fdbdad4ef3767f3e4337cfe5)] -> id: LinkDX]
+Session ID: f2e533a8fdbdad4ef3767f3e4337cfe5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2e533a8fdbdad4ef3767f3e4337cfe5, isElementDisplayed {id=f.A7D719506287B85D3624192F692E6F35.d.9C462E52A5C325066B69F3DCD6807C25.e.60}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir17044_107...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63090/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f2e533a8fdbdad4ef3767f3e4337cfe5)] -> id: LinkDX]
+Session ID: f2e533a8fdbdad4ef3767f3e4337cfe5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at software.testing.group6.SignUpTest.testInvalidInputs(SignUpTest.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidInputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:21 ICT" name="tearDown" finished-at="2025-06-04T11:25:21 ICT" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:21 ICT" name="setUp" finished-at="2025-06-04T11:25:23 ICT" duration-ms="1790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidInputs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:23 ICT" name="testInvalidInputs" description="TC9-TC14: Kiểm thử đăng ký với dữ liệu không hợp lệ" data-provider="invalidInputData" finished-at="2025-06-04T11:25:52 ICT" duration-ms="29085" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user09812]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nguyen Van A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01/01/1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[user12@example.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[123 Đường ABC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Mật khẩu phải đủ 6 đến 20 ký tự]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68bb6cc084b5e7cb6cfb95e861c1c5c9, isElementDisplayed {id=f.DDBD3E15F9ACDEE9FE98E7B7CA6A0D24.d.5D36EB18C849A9E1114FED2E09AB3DDD.e.65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir15548_457...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63126/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (68bb6cc084b5e7cb6cfb95e861c1c5c9)] -> id: LinkDX]
+Session ID: 68bb6cc084b5e7cb6cfb95e861c1c5c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68bb6cc084b5e7cb6cfb95e861c1c5c9, isElementDisplayed {id=f.DDBD3E15F9ACDEE9FE98E7B7CA6A0D24.d.5D36EB18C849A9E1114FED2E09AB3DDD.e.65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: D:\TEMP\scoped_dir15548_457...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63126/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (68bb6cc084b5e7cb6cfb95e861c1c5c9)] -> id: LinkDX]
+Session ID: 68bb6cc084b5e7cb6cfb95e861c1c5c9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at software.testing.group6.SignUpTest.testInvalidInputs(SignUpTest.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidInputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:software.testing.group6.SignUpTest@65466a6a]" started-at="2025-06-04T11:25:52 ICT" name="tearDown" finished-at="2025-06-04T11:25:52 ICT" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- software.testing.group6.SignUpTest -->
+    </test> <!-- Testting -->
+  </suite> <!-- Default Suite -->
+</testng-results>

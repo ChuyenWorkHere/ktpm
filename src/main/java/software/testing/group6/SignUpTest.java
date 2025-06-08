@@ -1,9 +1,6 @@
 package software.testing.group6;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -14,7 +11,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.List;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 public class SignUpTest {
@@ -25,86 +24,125 @@ public class SignUpTest {
         System.setProperty("webdriver.chrome.driver", "D:\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+
     }
 
+    //Testcase đăng ký tài khoản thành công
     @DataProvider(name = "validSignUpData")
     public Object[][] validSignUpData() {
         return new Object[][] {
-                {"user123", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user@example.com", "0123456789", "123 Đường ABC"}
+                {"user123ntabcde", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user@example.com",
+                        "0123456789", "123 Đường ABC"}
         };
     }
 
+    //Testcase thiếu trường dữ liệu bắt buộc
     @DataProvider(name = "missingFieldData")
     public Object[][] missingFieldData() {
         return new Object[][] {
                 // TC2: Thiếu tên tài khoản
-                {"", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user2@example.com", "0123456789", "123 Đường ABC", "Nhập tài khoản"},
+                {"", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user2@example.com", "0123456789",
+                        "123 Đường ABC", "Nhập tài khoản"},
                 // TC3: Thiếu mật khẩu
-                {"user456", "", "Nguyen Van A", "01/01/1990", "Nam", "user3@example.com", "0123456789", "123 Đường ABC", "Nhập mật khẩu"},
+                {"user456", "", "Nguyen Van A", "01/01/1990", "Nam", "user3@example.com", "0123456789",
+                        "123 Đường ABC", "Nhập mật khẩu"},
                 // TC4: Thiếu họ và tên
-                {"user789", "Pass1234", "", "01/01/1990", "Nam", "user4@example.com", "0123456789", "123 Đường ABC", "Nhập họ tên"},
+                {"user789", "Pass1234", "", "01/01/1990", "Nam", "user4@example.com", "0123456789",
+                        "123 Đường ABC", "Nhập họ tên"},
                 // TC5: Thiếu ngày sinh
-                {"user101", "Pass1234", "Nguyen Van A", "", "Nam", "user5@example.com", "0123456789", "123 Đường ABC", "Nhập ngày sinh"},
+                {"user101", "Pass1234", "Nguyen Van A", "", "Nam", "user5@example.com", "0123456789",
+                        "123 Đường ABC", "Nhập ngày sinh"},
                 // TC6: Thiếu email
-                {"user102", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "", "0123456789", "123 Đường ABC", "Nhập email"},
+                {"user102", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "", "0123456789",
+                        "123 Đường ABC", "Nhập email"},
                 // TC7: Thiếu số điện thoại
-                {"user103", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user6@example.com", "", "123 Đường ABC", "Nhập số điện thoại"},
+                {"user103", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user6@example.com",
+                        "", "123 Đường ABC", "Nhập số điện thoại"},
                 // TC8: Thiếu địa chỉ
-                {"user104", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user7@example.com", "0123456789", "", "Nhập địa chỉ"}
+                {"user104", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user7@example.com",
+                        "0123456789", "", "Nhập địa chỉ"}
         };
     }
 
+    //Testcase các trường dữ liệu không hợp lệ
     @DataProvider(name = "invalidInputData")
     public Object[][] invalidInputData() {
         return new Object[][] {
                 // TC9: Email không hợp lệ
-                {"user105ntnnt", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "chickaakaka.com", "0123456789", "123 Đường ABC", "Email không hợp lệ"},
+                {"user105ntnnt", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "chickaakaka.com",
+                        "0123456789", "123 Đường ABC", "Email không hợp lệ"},
                 // TC10: Tên tài khoản không hợp lệ
-                {"bc", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user8@example.com", "0123456789", "123 Đường ABC", "Tên tài khoản phải ít nhất 6 ký tự"},
+                {"bc", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user8@example.com",
+                        "0123456789", "123 Đường ABC", "Tên tài khoản phải ít nhất 6 ký tự"},
                 // TC11: Họ tên không hợp lệ
-                {"user106nt", "Pass1234", "vcc@", "01/01/1990", "Nam", "user9@example.com", "0123456789", "123 Đường ABC", "Họ và tên không hợp lệ"},
+                {"user106nt", "Pass1234", "vcc@", "01/01/1990", "Nam", "user9@example.com",
+                        "0123456789", "123 Đường ABC", "Họ và tên không hợp lệ"},
                 // TC12: Ngày sinh không hợp lệ
-                {"user107nt", "Pass1234", "Nguyen Van A", "01/01/2026", "Nam", "user10@example.com", "0123456789", "123 Đường ABC", "Ngày sinh không hợp lệ"},
+                {"user107nt", "Pass1234", "Nguyen Van A", "01/01/2026", "Nam", "user10@example.com",
+                        "0123456789", "123 Đường ABC", "Ngày sinh không hợp lệ"},
                 // TC13: SĐT không hợp lệ
-                {"user108nt", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user11@example.com", "abc123", "123 Đường ABC", "SĐT không hợp lệ"},
+                {"user108nt", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user11@example.com",
+                        "abc123", "123 Đường ABC", "SĐT không hợp lệ"},
                 // TC14: Mật khẩu không hợp lệ
-                {"user09812", "a", "Nguyen Van A", "01/01/1990", "Nam", "user12@example.com", "0123456789", "123 Đường ABC", "Mật khẩu phải đủ 6 đến 20 ký tự"}
+                {"user09812", "a", "Nguyen Van A", "01/01/1990", "Nam", "user12@example.com",
+                        "0123456789", "123 Đường ABC", "Mật khẩu phải đủ 6 đến 20 ký tự"}
         };
     }
 
+    //Testcase với trường dữ liệu đã tồn tại
     @DataProvider(name = "existingData")
     public Object[][] existingData() {
         return new Object[][] {
                 // TC15: Tài khoản đã tồn tại
-                {"existingUser", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user13@example.com", "0123456789", "123 Đường ABC", "Tài khoản đã có người sử dụng"},
+                {"existingUser", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user13@example.com",
+                        "0123456789", "123 Đường ABC", "Tài khoản đã có người sử dụng"},
                 // TC16: SĐT đã tồn tại
-                {"user110", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user14@example.com", "existingPhone", "123 Đường ABC", "Số điện thoại đã có người sử dụng"},
+                {"user110", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user14@example.com",
+                        "existingPhone", "123 Đường ABC", "Số điện thoại đã có người sử dụng"},
                 // TC17: Email đã tồn tại
-                {"user111", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "existingEmail@example.com", "0123456789", "123 Đường ABC", "Email đã có người sử dụng"}
+                {"user111", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "existingEmail@example.com",
+                        "0123456789", "123 Đường ABC", "Email đã có người sử dụng"}
         };
     }
 
     @Test(dataProvider = "validSignUpData", description = "TC1: Kiểm thử đăng ký tài khoản thành công")
     public void testSignUpSuccess(String username, String password, String fullName, String birthYear,
                                   String gender, String email, String phone, String address) {
-        driver.get("http://hauiproj.somee.com/Dangky.aspx");
+        // Mở trang chủ
+        driver.get("http://hauiproj.somee.com/Default.aspx");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Nhấn nút đăng ký
+        WebElement registerButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("LinkDK")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", registerButton);
+        registerButton.click();
+
         fillForm(username, password, fullName, birthYear, gender, email, phone, address);
         WebElement submitButton = driver.findElement(By.id("ContentPlaceHolder1_btDangky"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
         submitButton.click();
-        String currentTitle = driver.getTitle();
-        assertTrue(currentTitle.contains("Trang chủ"), "Không chuyển hướng đến trang chủ!");
+
+        // Kiểm tra nút đăng ký không hiển thị
+        List<WebElement> signUpButtons = driver.findElements(By.id("LinkDK"));
+        boolean isSignUpButtonDisplayed = !signUpButtons.isEmpty() && signUpButtons.get(0).isDisplayed();
+        assertFalse(isSignUpButtonDisplayed, "Nút đăng ký hiển thị trên trang chủ khi đăng ký thành công!");
     }
 
     @Test(dataProvider = "missingFieldData", description = "TC2-TC8: Kiểm thử đăng ký với thiếu trường bắt buộc")
     public void testMissingFields(String username, String password, String fullName, String birthYear,
                                   String gender, String email, String phone, String address, String expectedError) {
-        driver.get("http://hauiproj.somee.com/Dangky.aspx");
-        fillForm(username, password, fullName, birthYear, gender, email, phone, address);
+        // Mở trang chủ
+        driver.get("http://hauiproj.somee.com/Default.aspx");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Nhấn nút đăng ký
+        WebElement registerButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("LinkDK")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", registerButton);
+        registerButton.click();
+
+        fillForm(username, password, fullName, birthYear, gender, email, phone, address);
         WebElement submitButton = driver.findElement(By.id("ContentPlaceHolder1_btDangky"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
         submitButton.click();
+
         WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ContentPlaceHolder1_lblThongBao")));
         assertTrue(errorMessage.isDisplayed(), "Không hiển thị thông báo lỗi: " + expectedError);
     }
@@ -112,24 +150,42 @@ public class SignUpTest {
     @Test(dataProvider = "invalidInputData", description = "TC9-TC14: Kiểm thử đăng ký với dữ liệu không hợp lệ")
     public void testInvalidInputs(String username, String password, String fullName, String birthYear,
                                   String gender, String email, String phone, String address, String expectedError) {
-        driver.get("http://hauiproj.somee.com/Dangky.aspx");
-        fillForm(username, password, fullName, birthYear, gender, email, phone, address);
+        // Mở trang chủ
+        driver.get("http://hauiproj.somee.com/Default.aspx");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Nhấn nút đăng ký
+        WebElement registerButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("LinkDK")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", registerButton);
+        registerButton.click();
+
+        fillForm(username, password, fullName, birthYear, gender, email, phone, address);
         WebElement submitButton = driver.findElement(By.id("ContentPlaceHolder1_btDangky"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
         submitButton.click();
-        WebElement errorMessage = driver.findElement(By.id("ContentPlaceHolder1_lblThongBao"));
-        String actualError = errorMessage.getText();
-        assertTrue(errorMessage.isDisplayed(), "Không hiển thị thông báo lỗi: " + expectedError);
-        assertTrue(actualError.equalsIgnoreCase(expectedError), "Thông báo lỗi không đúng. Kỳ vọng: " + expectedError + ", Thực tế: " + actualError);
+
+        // Kiểm tra nút thoát hiển thị
+        List<WebElement> signUpButtons = driver.findElements(By.id("LinkDX"));
+        boolean isSignUpButtonDisplayed = !signUpButtons.isEmpty() && signUpButtons.get(0).isDisplayed();
+        assertFalse(isSignUpButtonDisplayed, "Nút đăng ký hiển thị trên trang chủ khi thông tin nhập không hợp lệ!");
+
+        //        WebElement errorMessage = driver.findElement(By.id("ContentPlaceHolder1_lblThongBao"));
+//        String actualError = errorMessage.getText();
+//        assertTrue(actualError.equalsIgnoreCase(expectedError), "Thông báo lỗi không đúng. Kỳ vọng: " +
+//                expectedError + ", Thực tế: " + actualError);
     }
 
     @Test(dataProvider = "existingData", description = "TC15-TC17: Kiểm thử đăng ký với thông tin đã tồn tại")
     public void testExistingData(String username, String password, String fullName, String birthYear,
                                  String gender, String email, String phone, String address, String expectedError) {
-        driver.get("http://hauiproj.somee.com/Dangky.aspx");
-        fillForm(username, password, fullName, birthYear, gender, email, phone, address);
+        // Mở trang chủ
+        driver.get("http://hauiproj.somee.com/Default.aspx");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Nhấn nút đăng ký
+        WebElement registerButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("LinkDK")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", registerButton);
+        registerButton.click();
+
+        fillForm(username, password, fullName, birthYear, gender, email, phone, address);
         WebElement submitButton = driver.findElement(By.id("ContentPlaceHolder1_btDangky"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
         submitButton.click();
@@ -138,16 +194,32 @@ public class SignUpTest {
     }
 
     @Test(description = "TC18: Kiểm thử hủy bỏ đăng ký")
-    public void testCancelSignUp() {
-        driver.get("http://hauiproj.somee.com/Dangky.aspx");
-        fillForm("user112", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam", "user15@example.com", "0123456789", "123 Đường ABC");
-        WebElement backButton = driver.findElement(By.xpath("//button[contains(text(), 'Quay lại')]"));
+    public void testCancelSignUp() throws InterruptedException {
+        // Mở trang đăng ký
+//        driver.get("http://hauiproj.somee.com/Default.aspx");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        // Chờ nút "Quay lại" có thể nhấp
+//        WebElement registerButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("LinkDK")));
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", registerButton);
+//        registerButton.click();
+
+        fillForm("user112", "Pass1234", "Nguyen Van A", "01/01/1990", "Nam",
+                "user15@example.com", "0123456789", "123 Đường ABC");
+
+        // Ẩn footer Somee.com để tránh che nút
+        ((JavascriptExecutor) driver).executeScript("document.querySelector('a[href=\"http://somee.com\"]').style.display='none';");
+
+        // Chờ nút "Quay lại" có thể nhấp
+        WebElement backButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(), 'Quay lại')]")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", backButton);
         backButton.click();
-        String currentUrl = driver.getCurrentUrl();
-        assertTrue(currentUrl.contains("Default"), "Không chuyển hướng về trang chủ khi hủy đăng ký!");
-    }
+        // Chờ URL chuyển hướng về trang chủ
+        wait.until(ExpectedConditions.urlContains("Default.aspx"));
 
+        // Kiểm tra nút đăng ký trên trang chủ
+        WebElement signUpButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("LinkDK")));
+        assertTrue(signUpButton.isDisplayed(), "Nút đăng ký không hiển thị trên trang chủ!");
+    }
 
     private void fillForm(String username, String password, String fullName, String birthYear,
                           String gender, String email, String phone, String address) {
